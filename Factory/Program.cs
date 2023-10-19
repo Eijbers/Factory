@@ -10,7 +10,7 @@ namespace Factory
         {
             HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-            //Command pattern DI
+            //pattern DI
             builder.Services.AddTransient<RailRoadLogistics>(); 
             builder.Services.AddTransient<RoadLogistics>();
             builder.Services.AddTransient<SeaLogistics>();
